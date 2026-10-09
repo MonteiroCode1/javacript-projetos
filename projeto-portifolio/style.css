@@ -28,21 +28,19 @@ header h1 span {
     text-decoration: underline;
 }
 
-header nav {
-    padding: 15px;
-}
-
 header a {
+    display: inline-block;
     padding: 15px;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    border-bottom: 1.5px solid #111A26;
 }
 
 header a:hover {
+    padding: 15px;
     color: #2E83F2;
     border-bottom: 1.5px solid #2E83F2;
-    padding: 20px;
 }
 
 /*
@@ -51,52 +49,56 @@ parte do corpo o conteudo principal
 
 article.topico01 {
     text-align: center;
+    padding: 10px;
+    background-color: #0A1019;
+    color: white;
 }
 
 article.topico01 div.conteudo1 {
     display: inline-block;
-    background-color: lightcoral;
     max-width: 350px;
     margin: 10px auto;
     text-align: left;
 }
 
 article.topico01 div.conteudo1 a {
-    background-color: lightgray;
+    background-color: #2E83F2;
+    color: white;
+    font-weight: bold;
     display: inline-block;
-    margin: 13px 0px;
+    margin-right: 10px;
     padding: 10px 25px; 
     text-decoration: none;
     border-radius: 10px;
 
 }
 
-article.topico01 {
+article.topico01 div.conteudo1 a.link {
     background-color: #0A1019;
-    padding: 10px;
-    color: white;
+    border: 1px solid #2E83F2;
+}
+
+article.topico01 div.conteudo1 p.paragrafo {
+    margin-bottom: 10px;
 }
 
 article.topico01 p.namebig {
-    background-color: lightblue;
-    padding: 10px;
+    padding: 10px 0px;
     font-size: 3em;
     font-weight: bold;
 }
 
 article.topico01 p.namebig span {
-    background-color: lightslategrey;
     color: #2E83F2;
 }
 
 
 
 article.topico01 img {
-    background-color: lightblue;
     padding: 10px;
     margin: 10px;
     display: inline-block;
     max-width: 150px;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
