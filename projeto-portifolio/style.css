@@ -11,7 +11,12 @@ header {
     top: 0;
     background-color: #111A26;
     padding: 10px;
-    text-align: center;
+    text-align: left;
+}
+
+header div.navegacao {
+    max-width: 800px;
+    margin: auto;
 }
 
 header h1, nav {
@@ -43,21 +48,19 @@ header a:hover {
     border-bottom: 1.5px solid #2E83F2;
 }
 
-/*
-parte do corpo o conteudo principal
-*/
+/*personaliando o topico 01*/
 
 article.topico01 {
-    text-align: center;
     padding: 10px;
     background-color: #0A1019;
     color: white;
 }
 
 article.topico01 div.conteudo1 {
-    display: inline-block;
-    max-width: 350px;
-    margin: 10px auto;
+    display: block;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px;
     text-align: left;
 }
 
@@ -92,13 +95,78 @@ article.topico01 p.namebig span {
     color: #2E83F2;
 }
 
+/*personalizando o topico 02*/
 
-
-article.topico01 img {
+article.topico02 {
+    background-color: #111A26;
+    color: white;
     padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    max-width: 150px;
-    border-radius: 20px;
 }
 
+article.topico02 div.conteudo2 {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    max-width: 800px;
+    text-align: left;
+}
+
+article.topico02 div.conteudo2 span {
+    color: #2E83F2;
+    font-weight: bold;
+}
+
+article.topico02 div.conteudo2 p {
+    padding: 10px 0px;
+}
+
+article.topico02 img {
+    display: block;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/*Personalizando topico03*/
+
+article.topico03 {
+    background-color: #0A1019;
+    color: white;
+    padding: 10px;
+}
+
+article.topico03 h2 {
+    text-align: left;
+}
+
+article.topico03 span {
+    color: #2E83F2;
+    margin-right: 20px;
+}
+
+article.topico03 div.tecnologias {
+    text-align: center;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+article.topico03 div.tecnologias p {
+    text-align: left;
+    padding: 10px 0px;
+}
+
+article.topico03 div.bloco {
+    text-align: center;
+    background-color: #111A26;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    min-width: 300px;
+}
+
+article.topico03 div.tecnologias div.html-bloco {
+    text-align: center;
+}
