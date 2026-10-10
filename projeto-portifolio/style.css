@@ -4,6 +4,7 @@ Começando com o cabeçalho
 
 * {
     margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -46,6 +47,8 @@ header a:hover {
     padding: 15px;
     color: #2E83F2;
     border-bottom: 1.5px solid #2E83F2;
+    border-radius: 5px;
+    font-weight: normal;
 }
 
 /*personaliando o topico 01*/
@@ -152,21 +155,35 @@ article.topico03 div.tecnologias {
     margin: 30px auto;
 }
 
-article.topico03 div.tecnologias p {
+article.topico03 div.tecnologias p.teste {
     text-align: left;
     padding: 10px 0px;
 }
 
-article.topico03 div.bloco {
+article.topico03 div.tecnologias p {
     text-align: center;
+    padding: 10px 0px;
+}
+
+article.topico03 div.bloco {
     background-color: #111A26;
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
     margin: 10px;
     min-width: 300px;
+    border: 1px solid #111A26;
 }
 
-article.topico03 div.tecnologias div.html-bloco {
-    text-align: center;
+article.topico03 div.github-bloco img {
+    background-color: white;
+    border-radius: 50%;
 }
+
+article.topico03 div.bloco:hover {
+    background-color: #192738;
+    border: 1px solid #2E83F2;
+}
+
+/*personalizando o topico04*/
+
