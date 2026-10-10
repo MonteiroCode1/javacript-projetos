@@ -47,8 +47,6 @@ header a:hover {
     padding: 15px;
     color: #2E83F2;
     border-bottom: 1.5px solid #2E83F2;
-    border-radius: 5px;
-    font-weight: normal;
 }
 
 /*personaliando o topico 01*/
@@ -182,8 +180,66 @@ article.topico03 div.github-bloco img {
 
 article.topico03 div.bloco:hover {
     background-color: #192738;
-    border: 1px solid #2E83F2;
 }
 
 /*personalizando o topico04*/
+
+article.topico04 {
+    text-align: center;
+    background-color: #192738;
+    padding: 10px
+}
+
+article.topico04 div.centralizar04 {
+    max-width: 800px;
+    margin: 30px auto;
+    color: white;
+}
+
+article.topico04 div.centralizar04 h2, p.paragrafo04 {
+    text-align: left;
+    padding: 10px 0px;
+}
+
+article.topico04 div.projectbloco iframe {
+    display: inline-block;
+    margin: auto;
+    min-width: 400px;
+}
+
+article.topico04 div.projectbloco {
+    display: inline-block;
+    max-width: 400px;
+    margin: 10px;
+    background-color: #0A1019;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+article.topico04 div.projectbloco h2, p {
+    padding: 10px;
+}
+
+article.topico04 div.projectbloco a {
+    display: inline-block;
+    background-color: #2E83F2;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px; 
+    margin: 10px;
+    border-radius: 10px;
+}
+
+article.topico04 div.projectbloco a.linkup {
+    background-color: #0A1019;
+    color: #2E83F2;
+}
+
+article.topico04 div.projectbloco a.linkup img {
+    width: 20px;
+    background-color:#2E83F2;
+    border-radius: 10px;
+}
 
