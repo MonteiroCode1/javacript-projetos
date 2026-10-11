@@ -243,3 +243,65 @@ article.topico04 div.projectbloco a.linkup img {
     border-radius: 10px;
 }
 
+/*Personalizando o rodapé da pagina*/
+
+footer {
+    background-color: #0A1019;
+    color: white;
+}
+
+footer p.direitos {
+    text-align: center;
+}
+
+footer div.centralfooter {
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    border-bottom: 1px solid ;
+}
+
+footer div.agradecimento, div.contato {
+    display: inline-block;
+}
+
+footer div.agradecimento span {
+    color: #2E83F2;
+    text-decoration: underline;
+}
+
+footer div.agradecimento p {
+    padding: 5px 0px;
+}
+
+footer div.contato p {
+    display: inline-block;
+}
+
+footer div.contato a {
+    color: white;
+    text-decoration: none;
+}
+
+footer div.contato a:hover {
+    color: #2E83F2;
+}
+
+footer div.contato img.git {
+    width: 2em;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+footer div.contato img.link {
+    width: 2em;
+    background-color: white;
+    margin-right: 10px;
+}
+
+footer div.contato img.gmail {
+    width: 2em;
+    background-color: white;
+    margin-right: 10px;
+}
