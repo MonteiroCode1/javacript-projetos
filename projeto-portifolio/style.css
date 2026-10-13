@@ -11,7 +11,6 @@ header {
     position: sticky;
     top: 0;
     background-color: #111A26;
-    padding: 10px;
     text-align: left;
 }
 
@@ -52,7 +51,7 @@ header a:hover {
 /*personaliando o topico 01*/
 
 article.topico01 {
-    padding: 10px;
+    padding: 40px;
     background-color: #0A1019;
     color: white;
 }
@@ -101,7 +100,7 @@ article.topico01 p.namebig span {
 article.topico02 {
     background-color: #111A26;
     color: white;
-    padding: 10px;
+    padding: 50px;
 }
 
 article.topico02 div.conteudo2 {
@@ -135,7 +134,7 @@ article.topico02 img {
 article.topico03 {
     background-color: #0A1019;
     color: white;
-    padding: 10px;
+    padding: 50px;
 }
 
 article.topico03 h2 {
@@ -187,7 +186,7 @@ article.topico03 div.bloco:hover {
 article.topico04 {
     text-align: center;
     background-color: #192738;
-    padding: 10px
+    padding: 50px
 }
 
 article.topico04 div.centralizar04 {
