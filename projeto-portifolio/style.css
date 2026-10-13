@@ -203,7 +203,8 @@ article.topico04 div.centralizar04 h2, p.paragrafo04 {
 article.topico04 div.projectbloco iframe {
     display: inline-block;
     margin: auto;
-    min-width: 400px;
+    width: 400px;
+    max-width: 100%;
 }
 
 article.topico04 div.projectbloco {
