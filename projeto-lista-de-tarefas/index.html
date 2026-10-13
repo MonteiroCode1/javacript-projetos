@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1>Minhas <span>Tarefas</span></h1>
+            <p>Pequenas tarefas, grandes conquistas!</p>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h2>Organize <span>seu dia</span></h2>
+            <p>adicione suas tarefas, marque as que já foram concluidas e mantenha o foco no que realmente importa.</p>
+            <form>
+                <input type="text" id="inTarefa" placeholder="Digite uma nova tarefa..." required autofocus>
+                <input type="submit" value="Adicionar Tarefa">
+            </form>
+            <section>
+
+                <aside class="statusDasTarefas">
+                    <span>Tarefas pendentes: </span> <span class="contador"></span>
+                    <button type="button" id="inTodos">Todos</button>
+                    <button type="button" id="inPendentes">Pendentes</button>
+                    <button type="button" id="inConcluidas">Concluídas</button>
+                </aside>
+
+                <ul class="listaDeTarefas">
+                </ul>
+
+                <p>Disciplina é o caminho para seus objetivos.</p>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
