@@ -73,12 +73,13 @@ article.topico01 div.conteudo1 a {
     padding: 10px 25px; 
     text-decoration: none;
     border-radius: 10px;
-
+    
 }
 
 article.topico01 div.conteudo1 a.link {
     background-color: #0A1019;
     border: 1px solid #2E83F2;
+    margin-top: 10px;
 }
 
 article.topico01 div.conteudo1 p.paragrafo {
