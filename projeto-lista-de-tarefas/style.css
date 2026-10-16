@@ -1,0 +1,124 @@
+/*Personalizando o cabeçalho*/
+
+body {
+    margin: 0px;
+    background-color: #0A182F;
+}
+
+header {
+    background-color: #0C1E3A;
+    box-shadow: 1px 1px 8px 1px #2F82F4;
+}
+
+header div.cabecalho {
+    max-width: 800px;
+    margin: auto;
+}
+
+header div.cabecalho h1, p {
+    color: white;
+    display: inline-block;
+    margin: 15px;
+}
+
+header div.cabecalho h1 span {
+    color: #2F82F4;
+}
+
+header div.cabecalho p {
+    float: right;
+    color: lightgray;
+    background-color: #0C1E3A;
+    padding: 12px;
+    border-bottom: 1px solid #2F82F4;
+    border-radius: 10px;
+}
+
+/*Personalizando o corpo do site*/
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #0C1E3A;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 8px 1px #2F82F4;
+}
+
+main article {
+    padding: 10px;
+}
+
+main article h2 {
+    margin: 10px;
+}
+
+main article h2 span {
+    color: #2F82F4;
+}
+
+main article p {
+    max-width: 370px;
+    color: lightgray;
+}
+
+main article form input.campo {
+    font-style: italic;
+    width: 100%;
+    max-width: 300px;
+    padding: 13px;
+    border-radius: 10px;
+    color: lightgray;
+    background-color: #11223D;
+    border: 1px solid rgb(67, 85, 117);
+    margin: 10px
+}
+
+main article form input.btadd {
+    padding: 13px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #2F82F4;
+    border: 1px solid #2F82F4;
+}
+
+main article section aside {
+    background-color: #0A182F;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+main article section aside span.contador {
+    padding: 10px;
+}
+
+main article section aside button {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #11223D;
+    color: white;
+    border: 1px solid #11223D;
+}
+
+main article section aside button:hover {
+    background-color: #2F82F4;
+    border: 1px solid #2F82F4;
+}
+
+main article section ul {
+    background-color: #0A182F;
+    border: 1px solid #11223D;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+main article section ul li {
+    border-bottom: 2px solid #11223D;
+    padding: 10px;
+}
+
