@@ -1,5 +1,10 @@
+@charset "UTF-8";
 /*Personalizando o cabeçalho*/
-
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
 body {
     margin: 0px;
     background-color: #0A182F;
@@ -8,6 +13,7 @@ body {
 header {
     background-color: #0C1E3A;
     box-shadow: 1px 1px 8px 1px #2F82F4;
+    text-align: center;
 }
 
 header div.cabecalho {
@@ -15,7 +21,8 @@ header div.cabecalho {
     margin: auto;
 }
 
-header div.cabecalho h1, p {
+header div.cabecalho h1,
+header div.cabecalho p {
     color: white;
     display: inline-block;
     margin: 15px;
@@ -26,7 +33,6 @@ header div.cabecalho h1 span {
 }
 
 header div.cabecalho p {
-    float: right;
     color: lightgray;
     background-color: #0C1E3A;
     padding: 12px;
@@ -37,7 +43,7 @@ header div.cabecalho p {
 /*Personalizando o corpo do site*/
 
 main {
-    max-width: 800px;
+    max-width: 600px;
     margin: 30px auto;
     background-color: #0C1E3A;
     color: white;
@@ -86,6 +92,7 @@ main article form input.btadd {
 }
 
 main article section aside {
+    display: inline-block;
     background-color: #0A182F;
     padding: 10px;
     margin: 10px;
@@ -111,14 +118,27 @@ main article section aside button:hover {
 }
 
 main article section ul {
+    list-style-type: none;
     background-color: #0A182F;
     border: 1px solid #11223D;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     padding: 0px;
 }
 
 main article section ul li {
-    border-bottom: 2px solid #11223D;
+    color: lightgray;
+    border-bottom: 1px solid #11223D;
+    padding: 16px;
+}
+
+main article section ul li button.excluir {
+    float: right;
+    background-color: #0A182F;
+    border: none;
+}
+
+main article section p {
     padding: 10px;
+    margin: 10px 0px;
 }
 
