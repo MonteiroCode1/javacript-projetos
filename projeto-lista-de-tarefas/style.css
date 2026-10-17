@@ -131,7 +131,11 @@ main article section ul li {
     padding: 16px;
 }
 
-main article section ul li button.excluir {
+.lista {
+    padding: 0px 10px;
+}
+
+.excluir {
     float: right;
     background-color: #0A182F;
     border: none;
