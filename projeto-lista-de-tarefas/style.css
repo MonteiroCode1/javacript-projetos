@@ -131,6 +131,10 @@ main article section ul li {
     padding: 16px;
 }
 
+.concluido {
+    text-decoration: line-through;
+}
+
 .lista {
     padding: 0px 10px;
 }
