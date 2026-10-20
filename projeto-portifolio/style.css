@@ -1,6 +1,9 @@
 /*
 Começando com o cabeçalho
 */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
     margin: 0px;
@@ -46,6 +49,8 @@ header a:hover {
     padding: 15px;
     color: #2E83F2;
     border-bottom: 1.5px solid #2E83F2;
+
+    transition: border-bottom 1s, color 1s;
 }
 
 /*personaliando o topico 01*/
@@ -180,6 +185,7 @@ article.topico03 div.github-bloco img {
 
 article.topico03 div.bloco:hover {
     background-color: #192738;
+    transition: background-color 1s;
 }
 
 /*personalizando o topico04*/
