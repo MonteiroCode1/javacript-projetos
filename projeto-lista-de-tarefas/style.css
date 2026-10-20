@@ -91,7 +91,7 @@ main article form input.btadd {
     border: 1px solid #2F82F4;
 }
 
-main article section aside {
+main article section aside.statusDasTarefas {
     display: inline-block;
     background-color: #0A182F;
     padding: 10px;
@@ -99,11 +99,11 @@ main article section aside {
     border-radius: 10px;
 }
 
-main article section aside span.contador {
+main article section aside.statusDasTarefas span.contador {
     padding: 10px;
 }
 
-main article section aside button {
+main article section aside.statusDasTarefas button {
     padding: 5px;
     margin-right: 10px;
     border-radius: 10px;
@@ -112,9 +112,11 @@ main article section aside button {
     border: 1px solid #11223D;
 }
 
-main article section aside button:hover {
+main article section aside.statusDasTarefas button:hover {
     background-color: #2F82F4;
     border: 1px solid #2F82F4;
+
+    transition: background-color 1s, border 2s;
 }
 
 main article section ul {
@@ -133,6 +135,10 @@ main article section ul li {
 
 .concluido {
     text-decoration: line-through;
+}
+
+.pendente {
+    text-decoration: none;
 }
 
 .lista {

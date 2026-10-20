@@ -5,14 +5,11 @@ const ul = document.querySelector(".listaDeTarefas");
 function exibirTarefa(tarefa) {
     //cria o elemento <li>
     const li = document.createElement("li");
+    li.className = "pendente";
     
     //cria o elemento checkbox e img e suas configurações
     const input = document.createElement('input');
     input.type = "checkbox";
-
-    input.addEventListener("change", function(event) {
-        event.target.parentElement.className = "concluido";
-    })
     
     const img = document.createElement("img");
     img.src = "image/excluir.png";
@@ -36,6 +33,13 @@ function exibirTarefa(tarefa) {
     
 }
 
+ul.addEventListener("change", function(event) {
+    if (event.target.type === "checkbox" && event.target.checked) {
+        event.target.parentElement.className = "concluido";
+    } else if (event.target.type === "checkbox") {
+        event.target.parentElement.className = "pendente";
+    }
+})
 
 function salvarTarefa(tarefa) {
     if (localStorage.getItem("tarefas")) {
@@ -75,5 +79,3 @@ frm.addEventListener("submit", function(e) {
     frm.reset();
     frm.inTarefa.focus();
 })
-
-
