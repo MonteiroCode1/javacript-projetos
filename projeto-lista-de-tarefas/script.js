@@ -2,7 +2,19 @@ const frm = document.querySelector("form");
 const ul = document.querySelector(".listaDeTarefas");
 
 
+function salvarStatus() {
+    if (localStorage.getItem("status")) {
+        const status = localStorage.getItem("status");
+        localStorage.setItem("status", status + `;${"pendente"}`);
+    } else {
+        localStorage.setItem("status", "pendente");
+    }
+}
+
 function exibirTarefa(tarefa) {
+    // salvar o status da tarefa como pendente
+    salvarStatus();
+
     //cria o elemento <li>
     const li = document.createElement("li");
     li.className = "pendente";
@@ -33,6 +45,8 @@ function exibirTarefa(tarefa) {
     
 }
 
+// verificação do checkbox para marca como concluido ou pendente 
+// com efeito riscado ou disriscado.
 ul.addEventListener("change", function(event) {
     if (event.target.type === "checkbox" && event.target.checked) {
         event.target.parentElement.className = "concluido";
