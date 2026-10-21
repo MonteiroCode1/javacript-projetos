@@ -13,7 +13,6 @@ function salvarStatus() {
 
 function exibirTarefa(tarefa) {
     // salvar o status da tarefa como pendente
-    salvarStatus();
 
     //cria o elemento <li>
     const li = document.createElement("li");
@@ -45,15 +44,32 @@ function exibirTarefa(tarefa) {
     
 }
 
+
 // verificação do checkbox para marca como concluido ou pendente 
 // com efeito riscado ou disriscado.
-ul.addEventListener("change", function(event) {
+ul.addEventListener("change", function(event) {  
     if (event.target.type === "checkbox" && event.target.checked) {
         event.target.parentElement.className = "concluido";
     } else if (event.target.type === "checkbox") {
         event.target.parentElement.className = "pendente";
     }
+
+
+    const inputs = ul.querySelectorAll("input[type='checkbox']");
+    const status = localStorage.getItem("status").split(";");
+
+    inputs.forEach(function(item, index) {
+        if (item.checked) {
+            status[index] = item.parentElement.className;
+        } else {
+            status[index] = item.parentElement.className;
+        }
+    })
+
+    localStorage.setItem("status", status.join(";"));
 })
+
+//altera o local de status quando alguma tarefa é concluido
 
 function salvarTarefa(tarefa) {
     if (localStorage.getItem("tarefas")) {
@@ -63,15 +79,31 @@ function salvarTarefa(tarefa) {
     }
 }
 
+function exibirStatus() {
+    const li = ul.querySelectorAll("li");
+    const status = localStorage.getItem("status").split(";");
+
+    li.forEach(function(item, index) {
+        const check = item.querySelector("input[type='checkbox']");
+        if (status[index] === "concluido") {
+            check.checked = true;
+        }
+        item.className = status[index];
+    })
+}
+
 window.addEventListener("load", () => {
     if (!localStorage.getItem("tarefas")) {
         return;
     }
     
     const tarefas = localStorage.getItem("tarefas").split(";");
+    const status = localStorage.getItem("status").split(";");
     for (const e of tarefas) {
         exibirTarefa(e);
     }
+
+    exibirStatus();
 })
 
 frm.addEventListener("submit", function(e) {
@@ -88,6 +120,7 @@ frm.addEventListener("submit", function(e) {
     
     exibirTarefa(tarefa);
     salvarTarefa(tarefa);
+    salvarStatus();
     
     // limpa o campo e mantem o foco
     frm.reset();
