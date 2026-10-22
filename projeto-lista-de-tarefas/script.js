@@ -45,6 +45,32 @@ function exibirTarefa(tarefa) {
 }
 
 
+ul.addEventListener("click", function(event) {
+    const listStatus = localStorage.getItem("status").split(";");
+    const listTarefa = localStorage.getItem("tarefas").split(";");
+
+    let chave;
+    if (event.target.classList.contains("excluir")) {
+        listTarefa.forEach(function(item, index) {
+            if (event.target.parentElement.innerText === item) {
+                chave = index;
+                ul.removeChild(event.target.parentElement);
+            }
+        })
+        
+        listTarefa.splice(chave, 1);
+        listStatus.splice(chave, 1);
+        
+        localStorage.setItem("tarefas", listTarefa.join(";"));
+        localStorage.setItem("status", listStatus.join(";"));
+    }
+
+})
+
+
+
+
+
 // verificação do checkbox para marca como concluido ou pendente 
 // com efeito riscado ou disriscado.
 ul.addEventListener("change", function(event) {  
