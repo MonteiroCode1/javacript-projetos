@@ -51,12 +51,13 @@ ul.addEventListener("click", function(event) {
 
     let chave;
     if (event.target.classList.contains("excluir")) {
-        listTarefa.forEach(function(item, index) {
-            if (event.target.parentElement.innerText === item) {
-                chave = index;
+        for (let i = 0; i < listTarefa.length; i++) {
+            if (event.target.parentElement.innerText === listTarefa[i]) {
+                chave = i;
                 ul.removeChild(event.target.parentElement);
+                break;
             }
-        })
+        }
         
         listTarefa.splice(chave, 1);
         listStatus.splice(chave, 1);
@@ -98,6 +99,7 @@ ul.addEventListener("change", function(event) {
 //altera o local de status quando alguma tarefa é concluido
 
 function salvarTarefa(tarefa) {
+    
     if (localStorage.getItem("tarefas")) {
         localStorage.setItem("tarefas", localStorage.getItem("tarefas") + `;${tarefa}`);
     } else {
@@ -108,7 +110,7 @@ function salvarTarefa(tarefa) {
 function exibirStatus() {
     const li = ul.querySelectorAll("li");
     const status = localStorage.getItem("status").split(";");
-
+    
     li.forEach(function(item, index) {
         const check = item.querySelector("input[type='checkbox']");
         if (status[index] === "concluido") {
@@ -124,11 +126,10 @@ window.addEventListener("load", () => {
     }
     
     const tarefas = localStorage.getItem("tarefas").split(";");
-    const status = localStorage.getItem("status").split(";");
     for (const e of tarefas) {
         exibirTarefa(e);
     }
-
+    
     exibirStatus();
 })
 
@@ -139,6 +140,25 @@ frm.addEventListener("submit", function(e) {
     
     if (tarefa === "") {
         alert("Digite uma tarefa!")
+        frm.reset();
+        frm.inTarefa.focus();
+        return;
+    }
+
+    let aux = 0;
+    if (localStorage.getItem("tarefas")) {
+        const listTarefa = localStorage.getItem("tarefas").split(";");
+
+
+        for (const e of listTarefa) {
+            if (tarefa.toLowerCase() === e.toLowerCase()) {
+                aux += 1;
+            }
+        }
+    }
+
+    if (aux > 0) {
+        alert("você já cadastrou essa tarefa!");
         frm.reset();
         frm.inTarefa.focus();
         return;

@@ -135,10 +135,12 @@ main article section ul li {
 
 .concluido {
     text-decoration: line-through;
+    color: #2F82F4;
 }
 
 .pendente {
     text-decoration: none;
+    font-size: 12px;
 }
 
 .lista {
