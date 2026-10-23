@@ -2,8 +2,6 @@ const frm = document.querySelector("form");
 const ul = document.querySelector(".listaDeTarefas");
 const aside = document.querySelector(".statusDasTarefas");
 const resp = document.querySelector("#contador");
-//usando delegação de eventos
-
 
 function salvarStatus() {
     if (localStorage.getItem("status")) {
@@ -136,6 +134,7 @@ window.addEventListener("load", () => {
     exibirStatus();
 })
 
+//usando delegação de eventos
 aside.addEventListener("click", function(event) {
     // verificação de qual ID foi clicado
     switch(event.target.id) {
