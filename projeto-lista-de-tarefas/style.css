@@ -99,8 +99,10 @@ main article section aside.statusDasTarefas {
     border-radius: 10px;
 }
 
-main article section aside.statusDasTarefas span.contador {
+main article section aside.statusDasTarefas span#contador {
     padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 main article section aside.statusDasTarefas button {
@@ -141,6 +143,7 @@ main article section ul li {
 .pendente {
     text-decoration: none;
     font-size: 12px;
+    color: orange;
 }
 
 .lista {
