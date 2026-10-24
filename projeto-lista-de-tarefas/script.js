@@ -141,21 +141,21 @@ aside.addEventListener("click", function(event) {
         case "inTodos":
           const totalTarefas = localStorage.getItem("tarefas").split(";").length;
           resp.innerText = totalTarefas;
-          resp.style.color = "white"
+          resp.style.color = "white";
           break;
 
         case "inPendentes":
             const pendente = localStorage.getItem("status").split(";");
             const totalPendente = pendente.filter(elemento => elemento === "pendente");
             resp.innerText = totalPendente.length;
-            resp.style.color = "orange"
+            resp.style.color = "orange";
             break;
 
         case "inConcluidas":
             const concluido = localStorage.getItem("status").split(";");
             const totalConcluido = concluido.filter(elemento => elemento === "concluido");
             resp.innerText = totalConcluido.length;
-            resp.style.color = "#2F82F4"
+            resp.style.color = "#2F82F4";
     }
 })
 
