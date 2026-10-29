@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <h1>Criar <span>conta</span></h1>
+        <p>Preencha seus dados para começar a usar o sistema.</p>
+
+        <form>
+            <label for="inNome">Nome completo</label>
+            <input type="text" id="inNome" required autofocus>
+
+            <label for="inEmail">E-mail</label>
+            <input type="text" id="inEmail" required>
+
+            <label for="inSenha">Senha</label>
+            <input type="text" id="inSenha" required>
+
+            <label for="inConfirm">Confirmar Senha</label>
+            <input type="text" id="inConfirm" required>
+
+            <label for="inData">Data de nascimento</label>
+            <input type="date" id="inData" required>
+
+            <label for="inEstado">Estado</label>
+            <select name="estados" id="inEstado">
+                <option value="Piaui">Piaui</option>
+                <option value="Tocantins">Tocantins</option>
+                <option value="Para">Para</option>
+                <option value="Amazonas">Amazonas</option>
+            </select>
+
+            <label>Gênero</label>
+            <input type="radio" name="sexo" id="inMasculino"> Masculino
+            <input type="radio" name="sexo" id="inFeminino"> Feminino
+            <input type="radio" name="sexo" id="inFeminino"> outro
+
+            <label>Interesses</label>
+            <input type="checkbox" id="inHtml"> HTML
+            <input type="checkbox" id="inJs"> Js
+            <input type="checkbox" id="inPy"> Python
+            <input type="checkbox" id="inCs"> CSS
+
+            <label for="inSobre">Sobre você</label>
+            <input type="text" id="inSobre" placeholder="Conte um pouco sobre você">
+
+            <input type="checkbox" id="inTermos"> Li e aceito os termos
+
+            <input type="submit" value="Criar conta">
+        </form>
+    </main>
+</body>
+</html>
