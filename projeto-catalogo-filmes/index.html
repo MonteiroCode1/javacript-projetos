@@ -18,29 +18,40 @@
     <main>
         <article>
             <div class="cadastro">
-                <img src="image/adicionar.png" alt="Sinal de +" style="width: 40px;">
-                <h2>Adicionar um novo filme</h2>
-                <p>Preencha as informação abaixo para adicionar um filme á sua coleção.</p>
+                <div class="cabeca">
+                    <img src="image/adicionar.png" alt="Sinal de +" style="width: 40px;">
+                    <h2>Adicionar um novo filme</h2>
+                    <p>Preencha as informação abaixo para adicionar um filme á sua coleção.</p>
+                </div>
 
-                <form>
-                    <label for="inTitulo">Título do filme</label>
-                    <input type="text" id="inTitulo" placeholder="Ex.: Inception" required>
-                    <label for="inGenero">Gênero</label>
-                    <select name="genero" id="inGenero">
-                        <option value="sem Genero">Selecione um gênero</option>
-                        <option value="Ação">Ação</option>
-                        <option value="Ficção cientifica">Ficção cientifica</option>
-                        <option value="Drama">Drama</option>
-                        <option value="Comedia">Comedia</option>
-                        <option value="Terror">Terror</option>
-                        <option value="Aventura">Aventura</option>
-                    </select>
-                    <label for="inImage">Imagem(URL - opcional)</label>
-                    <input type="text" id="inImage" placeholder="Ex.: https://exemplo.com/imagem.jpg">
+                <form autocomplete="off">
+                    <div>
+                        <label for="inTitulo">Título do filme</label>
+                        <input type="text" id="inTitulo" placeholder="Ex.: Inception" required>
+                    </div>
+
+                    <div>
+                        <label for="inGenero">Gênero</label>
+                        <select name="genero" id="inGenero">
+                            <option value="sem Genero">Selecione um gênero</option>
+                            <option value="Ação">Ação</option>
+                            <option value="Ficção cientifica">Ficção cientifica</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Comedia">Comedia</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Aventura">Aventura</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="inImage">Imagem(URL - opcional)</label>
+                        <input type="text" id="inImage" placeholder="Ex.: https://exemplo.com/imagem.jpg">
+                    </div>
+
                     <input type="submit" value="+ Adicionar filme">
                 </form>
-
             </div>
+
         </article>
     </main>
 </body>

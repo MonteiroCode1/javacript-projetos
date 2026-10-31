@@ -27,12 +27,65 @@ header div.cabecalho {
     margin-bottom: 10px;
 }
 
+header div.cabecalho span {
+    color: #2291F2;
+}
+
 /*personalizando o corpo*/
 
-main article div.cadastro {
+main div.cadastro {
     background-color: #0A2247;
     max-width: 1000px;
+    padding: 10px;
     margin: 30px auto;
     color: white;
+    border-radius: 10px;
     border: 1px solid rgba(113, 144, 210, 0.653);
+}
+
+main div.cadastro img {
+    border-radius: 50%;
+    background-color: white;
+    display: block;
+    margin-right: 10px;
+    float: left;
+}
+
+main div.cabeca,
+main form {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+main form div {
+    display: inline-block;
+}
+
+main form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main form input,
+main form select {
+    width: 200px;
+    color: white;
+    background-color: #071B3B;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #01122C;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+main form > input {
+    width: 200px;
+    background-color: #2291F2;
+    border: 1px solid #2291F2;
+    margin-top: 10px;
+    margin-right: 0px;
+    font-weight: bold;
+    color: white;
 }
