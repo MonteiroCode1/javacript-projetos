@@ -24,7 +24,7 @@
                     <p>Preencha as informação abaixo para adicionar um filme á sua coleção.</p>
                 </div>
 
-                <form autocomplete="off">
+                <form autocomplete="off" id="cadastro">
                     <div>
                         <label for="inTitulo">Título do filme</label>
                         <input type="text" id="inTitulo" placeholder="Ex.: Inception" required>
@@ -50,6 +50,34 @@
 
                     <input type="submit" value="+ Adicionar filme">
                 </form>
+            </div>
+
+            <div class="pesquisa">
+                <form autocomplete="off" id="pesquisa">
+                    <img src="image/filtro.png" alt="filtro">
+                    <label for="inFiltrar">Filtrar por gênero:</label>
+                    <select name="generos" id="inFiltrar">
+                        <option value="todos">todos</option>
+                        <option value="Ação">Ação</option>
+                        <option value="Ficção cientifica">Ficção cientifica</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Comedia">Comedia</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Aventura">Aventura</option>
+                    </select>
+
+                    <input type="text" id="inPesquisa" placeholder="Pesquisar Filmes">
+                    <input type="submit" value="&#128269;">
+                </form>
+            </div>
+
+            <div>
+                <img src="https://acdn-us.mitiendanube.com/stores/004/687/740/products/pos-01453-c769aa68ceb77bc76117181325192091-1024-1024.webp" alt="Batman">
+                <h2>Batman</h2>
+                <span>ação</span>
+                <span>Não assistido</span>
+                <button type="button" id="inAssistir">já Assistiu?</button>
+                <button type="button" id="inExcluir">Excluir</button>
             </div>
 
         </article>

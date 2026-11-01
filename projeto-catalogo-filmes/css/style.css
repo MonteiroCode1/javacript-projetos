@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +9,7 @@
 body {
     background-image: linear-gradient(to left, #041736, #020F24);
 }
+
 
 header {
     background-image: linear-gradient(to left, #0E264B, #03152F 100%);
@@ -32,6 +34,12 @@ header div.cabecalho span {
 }
 
 /*personalizando o corpo*/
+
+article {
+    background-color: brown;
+    max-width: 1000px;
+    margin: auto;
+}
 
 main div.cadastro {
     background-color: #0A2247;
@@ -70,7 +78,6 @@ main form label {
 
 main form input,
 main form select {
-    width: 200px;
     color: white;
     background-color: #071B3B;
     padding: 10px;
@@ -81,7 +88,6 @@ main form select {
 }
 
 main form > input {
-    width: 200px;
     background-color: #2291F2;
     border: 1px solid #2291F2;
     margin-top: 10px;
@@ -89,3 +95,28 @@ main form > input {
     font-weight: bold;
     color: white;
 }
+
+/*Personalizando as pesquisas e a filtragen*/
+
+main div.pesquisa {
+    background-color: #0A2247;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    max-width: 1000px;
+    margin: auto;
+    border: 1px solid rgba(113, 144, 210, 0.653);
+}
+
+main div.pesquisa label {
+    display: inline-block;
+    padding: 10px;
+}
+
+main div.pesquisa input {
+    float: right;
+    background-color: #071B3B;
+    border-color: #01122C;
+    margin-right: 10px;
+}
+
