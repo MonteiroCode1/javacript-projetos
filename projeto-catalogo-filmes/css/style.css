@@ -36,7 +36,6 @@ header div.cabecalho span {
 /*personalizando o corpo*/
 
 article {
-    background-color: brown;
     max-width: 1000px;
     margin: auto;
 }
@@ -99,6 +98,7 @@ main form > input {
 /*Personalizando as pesquisas e a filtragen*/
 
 main div.pesquisa {
+    text-align: center;
     background-color: #0A2247;
     border-radius: 10px;
     padding: 10px;
@@ -113,10 +113,62 @@ main div.pesquisa label {
     padding: 10px;
 }
 
-main div.pesquisa input {
-    float: right;
+main div.pesquisa div input {
     background-color: #071B3B;
-    border-color: #01122C;
     margin-right: 10px;
+    border: none;
 }
 
+main div.pesquisa  div {
+    background-color: #071B3B;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #01122C;
+}
+
+/*Lista de filmes que irão aparecer*/
+
+div.lista-filmes {
+    text-align: center;
+}
+
+div.lista-filmes > div {
+    display: inline-block;
+    background-color: #0A2247;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+div.lista-filmes > div > img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+div.lista-filmes > div > span.genero,
+div.lista-filmes > div > span.status {
+    display: block;
+    background-color: #174d9d;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+div.lista-filmes #inAssistir,
+div.lista-filmes #inExcluir {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+div.lista-filmes #inAssistir {
+    background-color: rgb(1, 86, 1);
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
+
+div.lista-filmes #inExcluir {
+    background-color: rgb(107, 0, 0);
+    font-weight: bold;
+}
