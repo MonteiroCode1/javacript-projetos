@@ -4,6 +4,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -138,6 +139,7 @@ div.lista-filmes > div {
     color: white;
     padding: 10px;
     margin-top: 10px;
+    border: 1px solid rgba(113, 144, 210, 0.4);
     border-radius: 10px;
 }
 
@@ -149,26 +151,39 @@ div.lista-filmes > div > img {
 div.lista-filmes > div > span.genero,
 div.lista-filmes > div > span.status {
     display: block;
-    background-color: #174d9d;
+    background-color: #5784c93f;
     padding: 5px;
     margin: 10px;
     border-radius: 5px;
 }
 
-div.lista-filmes #inAssistir,
-div.lista-filmes #inExcluir {
+div.lista-filmes .inAssistir,
+div.lista-filmes .inExcluir {
     padding: 5px;
     border-radius: 5px;
-    border: none;
 }
 
-div.lista-filmes #inAssistir {
+div.lista-filmes .inAssistir {
     background-color: rgb(1, 86, 1);
     color: rgb(0, 255, 0);
     font-weight: bold;
+    border: 1px solid green;
+    cursor: pointer;
 }
 
-div.lista-filmes #inExcluir {
+div.lista-filmes .inExcluir {
     background-color: rgb(107, 0, 0);
     font-weight: bold;
+    color: white;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+main form > input,
+.lista-filmes button {
+    cursor: pointer;
+}
+
+.lista-filmes > div:hover {
+    border-color: #2291F2;
 }

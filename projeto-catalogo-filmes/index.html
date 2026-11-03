@@ -21,7 +21,7 @@
                 <div class="cabeca">
                     <img src="image/adicionar.png" alt="Sinal de +" style="width: 40px;">
                     <h2>Adicionar um novo filme</h2>
-                    <p>Preencha as informação abaixo para adicionar um filme á sua coleção.</p>
+                    <p>Preencha as informações abaixo para adicionar um filme à sua coleção.</p>
                 </div>
 
                 <form autocomplete="off" id="cadastro">
@@ -33,7 +33,7 @@
                     <div>
                         <label for="inGenero">Gênero</label>
                         <select name="genero" id="inGenero">
-                            <option value="sem Genero">Selecione um gênero</option>
+                            <option value="" selected disabled>Selecione um gênero</option>
                             <option value="Ação">Ação</option>
                             <option value="Ficção cientifica">Ficção cientifica</option>
                             <option value="Drama">Drama</option>
@@ -45,7 +45,7 @@
 
                     <div>
                         <label for="inImage">Imagem(URL - opcional)</label>
-                        <input type="text" id="inImage" placeholder="Ex.: https://exemplo.com/imagem.jpg">
+                        <input type="url" id="inImage" placeholder="Ex.: https://exemplo.com/imagem.jpg">
                     </div>
 
                     <input type="submit" value="+ Adicionar filme">
@@ -76,73 +76,63 @@
             <div class="lista-filmes">
 
                 <div>
-                    <img src="https://acdn-us.mitiendanube.com/stores/004/687/740/products/pos-01453-c769aa68ceb77bc76117181325192091-1024-1024.webp" alt="Batman">
+                    <img src="https://acdn-us.mitiendanube.com/stores/004/687/740/products/pos-01453-c769aa68ceb77bc76117181325192091-1024-1024.webp" alt="Pôster do filme Batman">
                     <h2>Batman</h2>
                     <span class="genero">ação</span>
                     <span class="status">Não assistido</span>
                     <div class="acoes">
-                        <button type="button" id="inAssistir">já Assistiu?</button>
-                        <button type="button" id="inExcluir">Excluir</button>
+                        <button class="inAssistir">Já assistiu?</button>
+                        <button class="inExcluir">Excluir</button>
                     </div>
                 </div>
 
-                <div>
+                 <div>
                     <img src="https://acdn-us.mitiendanube.com/stores/004/687/740/products/pos-01453-c769aa68ceb77bc76117181325192091-1024-1024.webp" alt="Batman">
                     <h2>Batman</h2>
                     <span class="genero">ação</span>
                     <span class="status">Não assistido</span>
                     <div class="acoes">
-                        <button type="button" id="inAssistir">já Assistiu?</button>
-                        <button type="button" id="inExcluir">Excluir</button>
+                        <button class="inAssistir">já Assistiu?</button>
+                        <button class="inExcluir">Excluir</button>
                     </div>
                 </div>
 
-                <div>
+                 <div>
                     <img src="https://acdn-us.mitiendanube.com/stores/004/687/740/products/pos-01453-c769aa68ceb77bc76117181325192091-1024-1024.webp" alt="Batman">
                     <h2>Batman</h2>
                     <span class="genero">ação</span>
                     <span class="status">Não assistido</span>
                     <div class="acoes">
-                        <button type="button" id="inAssistir">já Assistiu?</button>
-                        <button type="button" id="inExcluir">Excluir</button>
+                        <button class="inAssistir">já Assistiu?</button>
+                        <button class="inExcluir">Excluir</button>
                     </div>
                 </div>
 
-                <div>
+                 <div>
                     <img src="https://acdn-us.mitiendanube.com/stores/004/687/740/products/pos-01453-c769aa68ceb77bc76117181325192091-1024-1024.webp" alt="Batman">
                     <h2>Batman</h2>
                     <span class="genero">ação</span>
                     <span class="status">Não assistido</span>
                     <div class="acoes">
-                        <button type="button" id="inAssistir">já Assistiu?</button>
-                        <button type="button" id="inExcluir">Excluir</button>
+                        <button class="inAssistir">já Assistiu?</button>
+                        <button class="inExcluir">Excluir</button>
                     </div>
                 </div>
 
-                <div>
+                 <div>
                     <img src="https://acdn-us.mitiendanube.com/stores/004/687/740/products/pos-01453-c769aa68ceb77bc76117181325192091-1024-1024.webp" alt="Batman">
                     <h2>Batman</h2>
                     <span class="genero">ação</span>
                     <span class="status">Não assistido</span>
                     <div class="acoes">
-                        <button type="button" id="inAssistir">já Assistiu?</button>
-                        <button type="button" id="inExcluir">Excluir</button>
+                        <button class="inAssistir">já Assistiu?</button>
+                        <button class="inExcluir">Excluir</button>
                     </div>
                 </div>
 
-                <div>
-                    <img src="https://acdn-us.mitiendanube.com/stores/004/687/740/products/pos-01453-c769aa68ceb77bc76117181325192091-1024-1024.webp" alt="Batman">
-                    <h2>Batman</h2>
-                    <span class="genero">ação</span>
-                    <span class="status">Não assistido</span>
-                    <div class="acoes">
-                        <button type="button" id="inAssistir">já Assistiu?</button>
-                        <button type="button" id="inExcluir">Excluir</button>
-                    </div>
-                </div>
             </div>
-
         </article>
     </main>
+<script src="script.js"></script>
 </body>
 </html>
