@@ -144,7 +144,7 @@ div.lista-filmes > div {
 }
 
 div.lista-filmes > div > img {
-    max-width: 200px;
+    max-width: 150px;
     border-radius: 10px;
 }
 
