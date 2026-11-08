@@ -134,18 +134,24 @@ div.lista-filmes {
 }
 
 div.lista-filmes > div {
+    width: 200px;
     display: inline-block;
     background-color: #0A2247;
     color: white;
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px;
     border: 1px solid rgba(113, 144, 210, 0.4);
     border-radius: 10px;
 }
 
 div.lista-filmes > div > img {
-    max-width: 150px;
+    width: 170px;
+    height: 305px;
     border-radius: 10px;
+}
+
+div.listar-filmes > div > p {
+    float: right;
 }
 
 div.lista-filmes > div > span.genero,

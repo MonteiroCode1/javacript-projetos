@@ -1,5 +1,3 @@
-const { createElement } = require("react");
-
 const formCadastro = document.querySelector("#cadastro");
 const formPesquisa = document.querySelector("#pesquisa");
 const listarFilmes = document.querySelector('#lista-filmes');
@@ -14,10 +12,10 @@ function criarCardsFilmes(titulo, genero, image) {
     img.src = image;
     img.alt = `pôster do filme ${titulo}`;
     
-    // gerando o elemento h2
-    const h2 = document.createElement("h2");
+    // gerando o elemento p
+    const p = document.createElement("p");
     const textTitulo = document.createTextNode(titulo);
-    h2.appendChild(textTitulo);
+    p.appendChild(textTitulo);
 
     // gerandos os spans
     const span1 = document.createElement("span");
@@ -26,7 +24,7 @@ function criarCardsFilmes(titulo, genero, image) {
     const textGenero = document.createTextNode(genero);
     span1.appendChild(textGenero);
     span2.className = "status";
-    span2.appendChild("Não assistido");
+    span2.appendChild(document.createTextNode("Não assistido"));
 
     // gerando os botoes da div2
     const button1 = document.createElement("button");
@@ -42,7 +40,7 @@ function criarCardsFilmes(titulo, genero, image) {
 
     // inserindo os valores
     div2.append(button1, button2);
-    div1.append(img, h2, span1, span2, div2);
+    div1.append(img, p, span1, span2, div2);
 
     // inserindo no lista filmes
 
@@ -58,4 +56,7 @@ formCadastro.addEventListener("submit", function(e) {
     const img = formCadastro.inImage.value;
 
     criarCardsFilmes(titulo, genero, img);
+
+    formCadastro.reset();
+    formCadastro.inTitulo.focus();
 })
