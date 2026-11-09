@@ -139,19 +139,20 @@ div.lista-filmes > div {
     background-color: #0A2247;
     color: white;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     border: 1px solid rgba(113, 144, 210, 0.4);
     border-radius: 10px;
 }
 
 div.lista-filmes > div > img {
     width: 170px;
-    height: 305px;
+    height: 251.81px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
-div.listar-filmes > div > p {
-    float: right;
+div.lista-filmes > div > h2 {
+    margin: 10px 0px;
 }
 
 div.lista-filmes > div > span.genero,

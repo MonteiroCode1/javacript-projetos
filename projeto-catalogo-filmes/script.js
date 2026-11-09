@@ -9,13 +9,17 @@ function criarCardsFilmes(titulo, genero, image) {
     div2.className = "acoes";
     // gerando o elemento img e inserindo a image
     const img =  document.createElement("img");
-    img.src = image;
-    img.alt = `pôster do filme ${titulo}`;
+    if (image.trim() === "") {
+        img.src = "https://www.unama.br/sites/unama.br/files/fields/imagemLateral/noticias/2018/10/cinepipoca.png";
+    } else {
+        img.src = image;
+        img.alt = `pôster do filme ${titulo}`;
+    }
     
-    // gerando o elemento p
-    const p = document.createElement("p");
+    // gerando o elemento h2
+    const h2 = document.createElement("h2");
     const textTitulo = document.createTextNode(titulo);
-    p.appendChild(textTitulo);
+    h2.appendChild(textTitulo);
 
     // gerandos os spans
     const span1 = document.createElement("span");
@@ -29,6 +33,8 @@ function criarCardsFilmes(titulo, genero, image) {
     // gerando os botoes da div2
     const button1 = document.createElement("button");
     const button2 = document.createElement("button");
+    button1.type = "button";
+    button2.type = "button";
     button1.className = "inAssistir";
     button2.className = "inExcluir";
 
@@ -40,7 +46,7 @@ function criarCardsFilmes(titulo, genero, image) {
 
     // inserindo os valores
     div2.append(button1, button2);
-    div1.append(img, p, span1, span2, div2);
+    div1.append(img, h2, span1, span2, div2);
 
     // inserindo no lista filmes
 
